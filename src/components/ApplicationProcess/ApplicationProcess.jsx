@@ -4,7 +4,7 @@ import applicationProcessImage from '../../assets/application_process.png'
 export default function ApplicationProcess() {
     return (
         <>
-            <div className='max-w-[1728px] mx-auto flex flex-col md:flex-row justify-around items-center my-15'>
+            <div className='max-w-[1728px] mx-auto flex flex-col md:flex-row justify-between px-2 md:px-20 items-center my-15'>
                 <div className='max-w-[750px]'>
                     <img src={applicationProcessImage} alt="" />
                 </div>
@@ -18,7 +18,7 @@ export default function ApplicationProcess() {
                                     xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 20 20"
                                     fill="currentColor"
-                                    className="h-7 w-7"
+                                    className="h-7 w-7 text-[#0984E3]"
                                 >
                                     <path
                                         fillRule="evenodd"
@@ -40,7 +40,7 @@ export default function ApplicationProcess() {
                                     xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 20 20"
                                     fill="currentColor"
-                                    className="h-7 w-7"
+                                    className="h-7 w-7 text-[#0984E3]"
                                 >
                                     <path
                                         fillRule="evenodd"
@@ -62,7 +62,7 @@ export default function ApplicationProcess() {
                                     xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 20 20"
                                     fill="currentColor"
-                                    className="h-7 w-7"
+                                    className="h-7 w-7 text-[#0984E3]"
                                 >
                                     <path
                                         fillRule="evenodd"
@@ -84,7 +84,7 @@ export default function ApplicationProcess() {
                                     xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 20 20"
                                     fill="currentColor"
-                                    className="h-7 w-7"
+                                    className="h-7 w-7 text-[#0984E3]"
                                 >
                                     <path
                                         fillRule="evenodd"
