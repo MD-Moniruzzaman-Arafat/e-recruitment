@@ -3,6 +3,9 @@ import PageBanner from '../components/PageBanner/PageBanner'
 import JobTitle from '../components/JobTitle/JobTitle'
 import Summary from '../components/Summary/Summary'
 import Requirements from '../components/Requirements/Requirements'
+import Responsibility from '../components/Responsibility/Responsibility'
+import FrequentlyAskedQuestion from '../components/FrequentlyAskedQuestion/FrequentlyAskedQuestion'
+import AskQuestions from '../components/AskQuestions/AskQuestions'
 
 export default function ComprehensiveJobDetails() {
     return (
@@ -12,6 +15,9 @@ export default function ComprehensiveJobDetails() {
                 <JobTitle />
                 <Summary />
                 <Requirements />
+                <Responsibility />
+                <FrequentlyAskedQuestion />
+                <AskQuestions />
             </div>
         </>
     )
