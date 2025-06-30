@@ -3,7 +3,8 @@ import logo from '../../assets/logo.jpg';
 import { CgProfile } from 'react-icons/cg';
 
 export default function Navbar() {
-    const pathName = useMatch('/job-circular')
+    const jobCircular = useMatch('/job-circular')
+    const appliedJobs = useMatch('/applied-jobs')
 
     return (
         <>
@@ -21,9 +22,9 @@ export default function Navbar() {
                             <ul className='flex flex-wrap md:flex-nowrap md:text-white'>
                                 <li className='text-[10px] md:text-[16px] font-medium  cursor-pointer px-3'><Link to={'job-circular'}>Job Circular</Link></li>
                                 {
-                                    pathName ? (
+                                    jobCircular || appliedJobs ? (
                                         <>
-                                            <li className='text-[10px] md:text-[16px] font-medium border-r-2 cursor-pointer px-3'>Applied Jobs</li>
+                                            <li className='text-[10px] md:text-[16px] font-medium border-r-2 cursor-pointer px-3'><Link to={'applied-jobs'}>Applied Jobs</Link></li>
                                             <li className='text-[16px] md:text-[26px] font-medium cursor-pointer px-3'><CgProfile /></li>
                                         </>
                                     ) : (<>
