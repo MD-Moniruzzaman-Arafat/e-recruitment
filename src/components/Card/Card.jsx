@@ -1,11 +1,22 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { FaMapLocationDot } from 'react-icons/fa6'
 import { GoStopwatch } from 'react-icons/go'
 import { IoIosPeople } from 'react-icons/io'
 import { IoBag } from 'react-icons/io5'
 import { Link } from 'react-router'
+import ModalForm from '../ModalForm/ModalForm'
 
 export default function Card() {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const showModal = () => {
+        setIsModalOpen(true);
+    };
+    const handleOk = () => {
+        setIsModalOpen(false);
+    };
+    const handleCancel = () => {
+        setIsModalOpen(false);
+    };
     return (
         <>
             <div className="card card-dash bg-base-100">
@@ -17,11 +28,13 @@ export default function Card() {
                     <p className='text-[12px] text-[#636E72] flex gap-1 items-center'><IoIosPeople /> Vacancy 10</p>
                     <p className='text-[12px] text-[#636E72] flex gap-1 items-center'><GoStopwatch /> Deadline 20 January, 2025</p>
                     <div className="card-actions flex items-center">
-                        <button className="bg-[#0984E3] rounded-4xl px-8 py-1 text-[12px] text-white">Apply</button>
-                        <button className="outline-[#636E72] border rounded-4xl px-5 py-0.5 text-[12px] text-[#636E72]"><Link to={'/job-circular/job-details'}>View More</Link></button>
+                        <button className="bg-[#0984E3] rounded-4xl px-8 py-1 text-[12px] text-white cursor-pointer" onClick={showModal}>Apply</button>
+                        <button className="outline-[#636E72] border rounded-4xl px-5 py-0.5 text-[12px] text-[#636E72] cursor-pointer"><Link to={'/job-circular/job-details'}>View More</Link></button>
                     </div>
                 </div>
             </div>
+
+            <ModalForm isModalOpen={isModalOpen} handleOk={handleOk} handleCancel={handleCancel} />
         </>
     )
 }
