@@ -70,7 +70,7 @@ export default function Footer() {
                     </nav>
                 </div>
             </footer>
-            <footer className="footer max-w-[1720px] mx-auto grid-cols-1 md:grid-cols-3 sm:footer-horizontal footer-center bg-[#0984E3] py-2 text-white">
+            <footer className="footer max-w-[1720px] mx-auto md:grid-cols-3 sm:footer-horizontal footer-center bg-[#0984E3] py-2 text-white">
                 <p >Design and Develop By,Ha-Meem Group IT Department</p>
                 <p>© 2024 Ha-Meem Group. All rights reserved</p>
                 <p>version 1.0.0</p>

@@ -3,6 +3,7 @@ import MainLayout from "../layout/MainLayout";
 import Home from "../pages/Home";
 import JobCircular from "../pages/JobCircular";
 import AppliedJobs from "../pages/AppliedJobs";
+import ComprehensiveJobDetails from "../pages/ComprehensiveJobDetails";
 
 export const router = createBrowserRouter([
     {
@@ -20,6 +21,14 @@ export const router = createBrowserRouter([
             {
                 path: '/applied-jobs',
                 element: <AppliedJobs />
+            },
+            {
+                path: '/job-circular/job-details',
+                element: <ComprehensiveJobDetails />
+            },
+            {
+                path: '/applied-jobs/job-details',
+                element: <ComprehensiveJobDetails />
             }
         ]
     },

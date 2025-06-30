@@ -3,6 +3,7 @@ import { FaMapLocationDot } from 'react-icons/fa6'
 import { GoStopwatch } from 'react-icons/go'
 import { IoIosPeople } from 'react-icons/io'
 import { IoBag } from 'react-icons/io5'
+import { Link } from 'react-router'
 
 export default function Card() {
     return (
@@ -17,7 +18,7 @@ export default function Card() {
                     <p className='text-[12px] text-[#636E72] flex gap-1 items-center'><GoStopwatch /> Deadline 20 January, 2025</p>
                     <div className="card-actions flex items-center">
                         <button className="bg-[#0984E3] rounded-4xl px-8 py-1 text-[12px] text-white">Apply</button>
-                        <button className="outline-[#636E72] border rounded-4xl px-5 py-0.5 text-[12px] text-[#636E72]">View More</button>
+                        <button className="outline-[#636E72] border rounded-4xl px-5 py-0.5 text-[12px] text-[#636E72]"><Link to={'/job-circular/job-details'}>View More</Link></button>
                     </div>
                 </div>
             </div>

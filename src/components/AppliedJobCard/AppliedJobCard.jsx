@@ -5,6 +5,7 @@ import { GoStopwatch } from 'react-icons/go'
 import { GrStatusCriticalSmall } from 'react-icons/gr'
 import { IoIosPeople } from 'react-icons/io'
 import { IoBag } from 'react-icons/io5'
+import { Link } from 'react-router'
 
 export default function AppliedJobCard() {
     return (
@@ -20,7 +21,8 @@ export default function AppliedJobCard() {
                     <p className='text-[12px] text-[#636E72] flex gap-1 items-center'><BsFillCalendarDateFill /> Applied At 11 January, 2025 </p>
                     <p className='text-[12px] text-[#636E72] flex gap-1 items-center'><GrStatusCriticalSmall /> Status: <span className='text-[#FF9500]'>Padding</span> </p>
                     <div className="card-actions flex items-center">
-                        <button className="outline-[#636E72] border rounded-4xl px-5 py-0.5 text-[12px] text-[#636E72]">View More</button>
+
+                        <button className="outline-[#636E72] border rounded-4xl px-5 py-0.5 text-[12px] text-[#636E72]"><Link to={'/applied-jobs/job-details'}>View More</Link></button>
                     </div>
                 </div>
             </div>
