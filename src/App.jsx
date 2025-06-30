@@ -1,5 +1,6 @@
 import './App.css'
 import ApplicationProcess from './components/ApplicationProcess/ApplicationProcess'
+import AskQuestions from './components/AskQuestions/AskQuestions'
 import BrowseLatestJobs from './components/BrowseLatestJobs/BrowseLatestJobs'
 import FrequentlyAskedQuestion from './components/FrequentlyAskedQuestion/FrequentlyAskedQuestion'
 import HomePageBanner from './components/HomePageBanner/HomePageBanner'
@@ -16,6 +17,7 @@ function App() {
       <BrowseLatestJobs />
       <JobsCategory />
       <FrequentlyAskedQuestion />
+      <AskQuestions />
     </>
   )
 }
