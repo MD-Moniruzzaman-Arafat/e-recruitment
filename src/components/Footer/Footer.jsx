@@ -11,8 +11,8 @@ export default function Footer() {
         <>
             <footer className="max-w-[1720px] mx-auto" style={{ backgroundImage: `url(${footerBg})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>
 
-                <div className='flex flex-col md:flex-row justify-between items-center p-10'>
-                    <div className='flex gap-5 items-center text-white'>
+                <div className='flex flex-col md:flex-row justify-between items-center p-10 gap-5'>
+                    <div className='flex flex-col md:flex-row gap-5 items-center text-white'>
                         <img src={footerLogo} alt="" className='w-[59px] h-[60px] border-4 rounded-full' />
                         <div>
                             <h1 className='text-[32px] font-bold'>E-Recruitment</h1>
@@ -70,7 +70,7 @@ export default function Footer() {
                     </nav>
                 </div>
             </footer>
-            <footer className="footer max-w-[1720px] mx-auto grid-cols-1 md:grid-cols-3 sm:footer-horizontal footer-center bg-[#0984E3] text-base-content py-2 text-white">
+            <footer className="footer max-w-[1720px] mx-auto grid-cols-1 md:grid-cols-3 sm:footer-horizontal footer-center bg-[#0984E3] py-2 text-white">
                 <p >Design and Develop By,Ha-Meem Group IT Department</p>
                 <p>© 2024 Ha-Meem Group. All rights reserved</p>
                 <p>version 1.0.0</p>

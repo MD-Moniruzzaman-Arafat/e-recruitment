@@ -1,3 +1,4 @@
+import { Link } from 'react-router';
 import logo from '../../assets/logo.jpg';
 
 export default function Navbar() {
@@ -16,7 +17,7 @@ export default function Navbar() {
                     <div>
                         <nav className='md:p-4 mt-2 md:mt-0'>
                             <ul className='flex flex-wrap md:flex-nowrap md:text-white'>
-                                <li className='text-[16px] font-medium  cursor-pointer px-3'>Job Circular</li>
+                                <li className='text-[16px] font-medium  cursor-pointer px-3'><Link to={'job-circular'}>Job Circular</Link></li>
                                 <li className='text-[16px] font-medium border-r-2 cursor-pointer px-3'>Start up</li>
                                 <li className='text-[16px] font-medium  cursor-pointer px-3'>Sign In</li>
                             </ul>
