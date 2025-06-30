@@ -2,6 +2,7 @@ import './App.css'
 import ApplicationProcess from './components/ApplicationProcess/ApplicationProcess'
 import AskQuestions from './components/AskQuestions/AskQuestions'
 import BrowseLatestJobs from './components/BrowseLatestJobs/BrowseLatestJobs'
+import Footer from './components/Footer/Footer'
 import FrequentlyAskedQuestion from './components/FrequentlyAskedQuestion/FrequentlyAskedQuestion'
 import HomePageBanner from './components/HomePageBanner/HomePageBanner'
 import JobsCategory from './components/JobsCategory/JobsCategory'
@@ -18,6 +19,7 @@ function App() {
       <JobsCategory />
       <FrequentlyAskedQuestion />
       <AskQuestions />
+      <Footer />
     </>
   )
 }
