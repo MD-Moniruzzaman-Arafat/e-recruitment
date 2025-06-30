@@ -18,7 +18,7 @@ export default function AskQuestions() {
                                 <input type="text" placeholder="Your Name" className="input input-sm" />
                                 <input type="email" placeholder="Your Email" className="input input-sm" />
                                 <textarea className="textarea" placeholder="Message"></textarea>
-                                <button className="bg-[#0984E3] rounded-4xl px-8 py-1 w-30 text-[12px] text-white">Apply</button>
+                                <button className="bg-[#0984E3] rounded-4xl px-8 py-1 w-30 text-[12px] text-white">Submit</button>
                             </form>
                         </div>
                     </div>

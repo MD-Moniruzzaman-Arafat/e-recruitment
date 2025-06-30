@@ -1,7 +1,9 @@
-import { Link } from 'react-router';
+import { Link, useMatch } from 'react-router';
 import logo from '../../assets/logo.jpg';
+import { CgProfile } from 'react-icons/cg';
 
 export default function Navbar() {
+    const pathName = useMatch('/job-circular')
 
     return (
         <>
@@ -17,9 +19,20 @@ export default function Navbar() {
                     <div>
                         <nav className='md:p-4 mt-2 md:mt-0'>
                             <ul className='flex flex-wrap md:flex-nowrap md:text-white'>
-                                <li className='text-[16px] font-medium  cursor-pointer px-3'><Link to={'job-circular'}>Job Circular</Link></li>
-                                <li className='text-[16px] font-medium border-r-2 cursor-pointer px-3'>Start up</li>
-                                <li className='text-[16px] font-medium  cursor-pointer px-3'>Sign In</li>
+                                <li className='text-[10px] md:text-[16px] font-medium  cursor-pointer px-3'><Link to={'job-circular'}>Job Circular</Link></li>
+                                {
+                                    pathName ? (
+                                        <>
+                                            <li className='text-[10px] md:text-[16px] font-medium border-r-2 cursor-pointer px-3'>Applied Jobs</li>
+                                            <li className='text-[16px] md:text-[26px] font-medium cursor-pointer px-3'><CgProfile /></li>
+                                        </>
+                                    ) : (<>
+                                        <li className='text-[10px] md:text-[16px] font-medium border-r-2 cursor-pointer px-3'>Start up</li>
+                                        <li className='text-[10px] md:text-[16px] font-medium  cursor-pointer px-3'>Sign In</li>
+                                    </>
+                                    )
+                                }
+
                             </ul>
                         </nav>
                     </div>

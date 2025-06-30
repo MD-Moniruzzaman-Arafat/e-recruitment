@@ -4,7 +4,6 @@ import { useMatch } from 'react-router'
 
 export default function BrowseLatestJobs({ length }) {
     const pathName = useMatch('/job-circular')
-    console.log(pathName)
     return (
         <>
             <div className='max-w-[1728px] mx-auto px-2 md:px-20 my-15'>
