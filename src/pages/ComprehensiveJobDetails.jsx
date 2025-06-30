@@ -1,6 +1,7 @@
 import React from 'react'
 import PageBanner from '../components/PageBanner/PageBanner'
 import JobTitle from '../components/JobTitle/JobTitle'
+import Summary from '../components/Summary/Summary'
 
 export default function ComprehensiveJobDetails() {
     return (
@@ -8,6 +9,7 @@ export default function ComprehensiveJobDetails() {
             <PageBanner title={'Comprehensive Job Details'} description={'Learn More About Responsibilities, Qualifications, Benefits, and How You Can Contribute to Our Success'} />
             <div className='max-w-[1720px] mx-auto md:px-20'>
                 <JobTitle />
+                <Summary />
             </div>
         </>
     )
