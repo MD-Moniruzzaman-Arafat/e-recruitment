@@ -1,4 +1,3 @@
-import { Card } from 'antd'
 import React from 'react'
 
 export default function CategoryCard({ image, title, description }) {

@@ -9,6 +9,7 @@ import image6 from '../../assets/Vector (8).svg'
 import image7 from '../../assets/Vector (2).svg'
 import image8 from '../../assets/Vector (5).svg'
 import image9 from '../../assets/Vector (7).svg'
+import SectionTitle from '../SectionTitle/SectionTitle'
 
 
 
@@ -17,10 +18,7 @@ export default function JobsCategory() {
     return (
         <>
             <div className='max-w-[1728px] mx-auto px-2 md:px-20 my-15'>
-                <div className='max-w-[1226px] mx-auto text-center mb-10'>
-                    <h1 className='text-[32px] font-bold text-[#636E72]'><span className='text-[#0984E3]'>Jobs</span> Category</h1>
-                    <p className='text-[#636E72] text-[20px] font-normal'>Discover diverse career opportunities across departments like IT, Engineering, Marketing, HR, and more at Ha-Meem Group. Find the perfect fit for your skills and ambitions! </p>
-                </div>
+                <SectionTitle title1={'Jobs'} title2={'Category'} description={'Discover diverse career opportunities across departments like IT, Engineering, Marketing, HR, and more at Ha-Meem Group. Find the perfect fit for your skills and ambitions!'} />
                 <div className='grid grid-cols-1 md:grid-cols-3 gap-5'>
                     <CategoryCard image={image1} title={'Human Resources (HR)'} description={'Managing Employee'} />
                     <CategoryCard image={image2} title={'Finance & Accounting'} description={'Managing and Planning Finance'} />
