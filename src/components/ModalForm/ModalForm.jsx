@@ -25,103 +25,103 @@ export default function ModalForm({ isModalOpen, handleOk, handleCancel }) {
                     <div className="flex flex-col md:flex-row gap-4">
                         <Form.Item
                             hasFeedback
-                            label="Field A"
+                            label="Name:"
                             name="field_a"
                             validateFirst
                             className="flex-1"
                             rules={[{ max: 6 }, { max: 3, message: 'Continue input to exceed 6 chars' }]}
                         >
-                            <Input placeholder="Validate A" />
+                            <Input placeholder="Name" />
                         </Form.Item>
 
                         <Form.Item
                             hasFeedback
-                            label="Field B"
+                            label="Email:"
                             name="field_b"
                             validateFirst
                             className="flex-1"
                             rules={[{ max: 6 }, { max: 3, message: 'Continue input to exceed 6 chars' }]}
                         >
-                            <Input placeholder="Validate B" />
+                            <Input placeholder="Email" />
                         </Form.Item>
                     </div>
                     <div className="flex flex-col md:flex-row gap-4">
                         <Form.Item
                             hasFeedback
-                            label="Field A"
+                            label="Contact Number:"
                             name="field_a"
                             validateFirst
                             className="flex-1"
                             rules={[{ max: 6 }, { max: 3, message: 'Continue input to exceed 6 chars' }]}
                         >
-                            <Input placeholder="Validate A" />
+                            <Input placeholder="Contact Number" />
                         </Form.Item>
 
                         <Form.Item
                             hasFeedback
-                            label="Field B"
+                            label="Title:"
                             name="field_b"
                             validateFirst
                             className="flex-1"
                             rules={[{ max: 6 }, { max: 3, message: 'Continue input to exceed 6 chars' }]}
                         >
-                            <Input placeholder="Validate B" />
+                            <Input placeholder="Title" />
                         </Form.Item>
                     </div>
                     <div className="flex flex-col md:flex-row gap-4">
                         <Form.Item
                             hasFeedback
-                            label="Field A"
+                            label="Company Name:"
                             name="field_a"
                             validateFirst
                             className="flex-1"
                             rules={[{ max: 6 }, { max: 3, message: 'Continue input to exceed 6 chars' }]}
                         >
-                            <Input placeholder="Validate A" />
+                            <Input placeholder="Company Name" />
                         </Form.Item>
 
                         <Form.Item
                             hasFeedback
-                            label="Field B"
+                            label="Unit Name:"
                             name="field_b"
                             validateFirst
                             className="flex-1"
                             rules={[{ max: 6 }, { max: 3, message: 'Continue input to exceed 6 chars' }]}
                         >
-                            <Input placeholder="Validate B" />
+                            <Input placeholder="Unit Name" />
                         </Form.Item>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                         <div>
                             <Form.Item
                                 hasFeedback
-                                label="Field A"
+                                label="Department Name:"
                                 name="field_a"
                                 validateFirst
                                 className="flex-1"
                                 rules={[{ max: 6 }, { max: 3, message: 'Continue input to exceed 6 chars' }]}
                             >
-                                <Input placeholder="Validate A" className='w-[900px]' />
+                                <Input placeholder="Department Name" className='w-[900px]' />
                             </Form.Item>
                             <Form.Item
                                 hasFeedback
-                                label="Field A"
+                                label="Location:"
                                 name="field_a"
                                 validateFirst
                                 className="flex-1"
                                 rules={[{ max: 6 }, { max: 3, message: 'Continue input to exceed 6 chars' }]}
                             >
-                                <Input placeholder="Validate A" />
+                                <Input placeholder="Location" />
                             </Form.Item>
                             <Form.Item
                                 hasFeedback
-                                label="Field A"
+                                label="Designation Name:"
                                 name="field_a"
                                 validateFirst
                                 className="flex-1"
                                 rules={[{ max: 6 }, { max: 3, message: 'Continue input to exceed 6 chars' }]}
                             >
-                                <Input placeholder="Validate A" />
+                                <Input placeholder="Designation Name" />
                             </Form.Item>
                         </div>
 
